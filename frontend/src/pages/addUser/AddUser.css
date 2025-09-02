@@ -1,0 +1,35 @@
+.adduser{
+    background-color: white;
+    width: 25%;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.065);
+}
+.adduser h2{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: darkcyan;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.adduser .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.adduser .input label{
+    margin-top: 10px;
+}
+
+.adduser .input button{
+    margin-top: 15px;
+}
+
+.adduser .input input{
+    padding: 10px;
+}

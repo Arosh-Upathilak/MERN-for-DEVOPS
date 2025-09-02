@@ -1,0 +1,43 @@
+.userTable{
+    width: 60%;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+    
+}
+
+.userTable .table{
+    width: 100%;
+    margin-top: 20px;
+}
+.userTable table{
+    border: 1px solid black;
+}
+
+.userTable .table thead th{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.userTable .table tbody td{
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.userTable .table tbody .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    
+}
+
+.nodata{
+    margin-top: 20px;
+    text-align: center;
+}
