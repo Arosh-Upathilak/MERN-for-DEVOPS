@@ -24,7 +24,7 @@ connectDB();
 
 
 app.get('/',(req,res)=>{
-    res.send('Hello World')
+    res.send('Hello World, How are you')
 })
 
 app.listen(port,()=>{
