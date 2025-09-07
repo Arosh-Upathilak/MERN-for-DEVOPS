@@ -1,0 +1,23 @@
+name: mern-devops
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create frontend .env
+        run: |
+          touch ./frontend/.env
+          echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> ./frontend/.env
+
+      - name: Create backend .env
+        run: |
+          touch ./backend/.env
+          echo "PORT=${{ secrets.PORT }}" >> ./backend/.env
+          echo "MONGO_URL=${{ secrets.MONGO_URL }}" >> ./backend/.env
