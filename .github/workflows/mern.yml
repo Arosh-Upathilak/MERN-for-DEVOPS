@@ -21,3 +21,12 @@ jobs:
           touch ./backend/.env
           echo "PORT=${{ secrets.PORT }}" >> ./backend/.env
           echo "MONGO_URL=${{ secrets.MONGO_URL }}" >> ./backend/.env
+
+
+      - name: Stop existing Docker Compose (if running)
+        run: |
+          docker compose down || true
+
+      - name: Run Docker Compose
+        run: |
+          docker compose up -d --build
